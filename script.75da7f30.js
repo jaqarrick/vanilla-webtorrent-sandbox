@@ -62236,7 +62236,8 @@ document.querySelector("form").addEventListener("submit", function (e) {
   log("Adding " + torrentId);
   client.add(torrentId, onTorrent);
 });
-(0, _dragDrop.default)("body", function (files) {
+var dragDropContainer = document.querySelector("#drag-drop-container");
+(0, _dragDrop.default)(dragDropContainer, function (files) {
   client.seed(files, function (torrent) {
     console.log("Client is seeding " + torrent.magnetURI);
   });
@@ -62270,7 +62271,7 @@ function log(str) {
   p.innerHTML = str;
   document.querySelector(".log").appendChild(p);
 }
-},{"webtorrent":"node_modules/webtorrent/index.js","drag-drop":"node_modules/drag-drop/index.js"}],"../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"webtorrent":"node_modules/webtorrent/index.js","drag-drop":"node_modules/drag-drop/index.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -62298,7 +62299,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60631" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61212" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -62474,5 +62475,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../../usr/local/lib/node_modules/parcel/src/builtins/hmr-runtime.js","script.js"], null)
+},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","script.js"], null)
 //# sourceMappingURL=/script.75da7f30.js.map
