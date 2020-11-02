@@ -1,0 +1,23 @@
+{
+  "name": "webtorrent-sandbox",
+  "homepage": "https://jaqarrick.github.io/vanilla-webtorrent-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "drag-drop": "^6.1.0",
+    "webtorrent": "^0.109.2"
+  }
+}
